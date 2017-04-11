@@ -1,0 +1,125 @@
+﻿<Profile>
+  <Name>Adventurer Specific Bounty</Name>
+  <KillMonsters>True</KillMonsters>
+  <PickupLoot>True</PickupLoot>
+  <GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="1" />
+  <Order>
+    <ToggleTargeting questId="1" combat="False" looting="True" />
+    <!--<Test/>-->
+
+<RunBounty questId="359116"/>
+<RunBounty questId="448270"/>
+<RunBounty questId="346184"/>
+<RunBounty questId="365381"/>
+<RunBounty questId="363346"/>
+<RunBounty questId="375201"/>
+<RunBounty questId="363409"/>
+<RunBounty questId="448216"/>
+<RunBounty questId="445044"/>
+<RunBounty questId="369878"/>
+<RunBounty questId="344488"/>
+
+<RunBounty questId="367904"/>
+<RunBounty questId="346186"/>
+<RunBounty questId="350562"/>
+<RunBounty questId="368564"/>
+<RunBounty questId="432334"/>
+<RunBounty questId="347600"/>
+<RunBounty questId="367872"/>
+<RunBounty questId="346036"/>
+<RunBounty questId="346067"/>
+<RunBounty questId="345498"/>
+
+<!-- <RunBounty questId="350560"/> -->
+<!-- <RunBounty questId="369348"/> -->
+<RunBounty questId="359927"/>
+<RunBounty questId="350556"/>
+<RunBounty questId="346180"/>
+<RunBounty questId="350564"/>
+<RunBounty questId="347565"/>
+<RunBounty questId="448314"/>
+
+
+
+
+
+
+
+
+
+<!--
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 449380, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 350564, IncompleteCount: 2, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 349270, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 350562, IncompleteCount: 2, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 347563, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 368433, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 359927, IncompleteCount: 2, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 363431, IncompleteCount: 1, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 369383, IncompleteCount: 1, SuccessCount: 3
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 369348, IncompleteCount: 2, SuccessCount: 4
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 350556, IncompleteCount: 1, SuccessCount: 5
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 359314, IncompleteCount: 1, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 345954, IncompleteCount: 2, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 375264, IncompleteCount: 1, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 347062, IncompleteCount: 1, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 346180, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 436282, IncompleteCount: 2, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 369319, IncompleteCount: 2, SuccessCount: 2
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 361421, IncompleteCount: 1, SuccessCount: 2
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 448206, IncompleteCount: 1, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 345954, IncompleteCount: 2, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 347565, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 350560, IncompleteCount: 2, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 350564, IncompleteCount: 2, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 350562, IncompleteCount: 2, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 359927, IncompleteCount: 2, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 359907, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 363561, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 369763, IncompleteCount: 1, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 436282, IncompleteCount: 2, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 368555, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 369348, IncompleteCount: 2, SuccessCount: 4
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 432699, IncompleteCount: 1, SuccessCount: 2
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 409897, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 349202, IncompleteCount: 1, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 433392, IncompleteCount: 1, SuccessCount: 3
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 448314, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 364336, IncompleteCount: 1, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 448270, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 344486, IncompleteCount: 1, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 349016, IncompleteCount: 1, SuccessCount: 1
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 350560, IncompleteCount: 2, SuccessCount: 0
+ [Adventurer][BountyStatistics][FailedQuest] QuestId: 369319, IncompleteCount: 2, SuccessCount: 2 
+
+
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 367904, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 346186, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 350562, IncompleteCount: 2,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 368564, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 432334, IncompleteCount: 1,  SuccessCount: 2
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 347600, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 367872, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 346036, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 350562, IncompleteCount: 2,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 346067, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 345498, IncompleteCount: 1,  SuccessCount: 0
+
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 359116, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 448270, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 346184, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 365381, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 363346, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 375201, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 363409, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 448216, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 445044, IncompleteCount: 1,  SuccessCount: 0
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 369878, IncompleteCount: 1,  SuccessCount: 1
+[Adventurer][BountyStatistics][FailedQuest] QuestId: 344488, IncompleteCount: 1,  SuccessCount: 0
+-->
+
+    <!--<WaitTimer questId="1" waitTime="2000000" />-->
+    <LeaveGame reason="Done"/>
+    <LoadProfile profile="TestProfile.xml" />-->
+  </Order>
+</Profile>

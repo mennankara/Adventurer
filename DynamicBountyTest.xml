@@ -1,0 +1,19 @@
+﻿<Profile>
+  <Name>Adventurer Specific Bounty</Name>
+  <KillMonsters>True</KillMonsters>
+  <PickupLoot>True</PickupLoot>
+  <GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="1" />
+  <Order>
+    <ToggleTargeting questId="1" combat="False" looting="True" />
+	
+	<!-- this automates restarting games, and logging bounty information -->
+	
+
+
+<Test2 />
+<WaitTimer waitTime="500" />
+<LeaveGame />
+<ReloadProfile />
+	
+  </Order>
+</Profile>

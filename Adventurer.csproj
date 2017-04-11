@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB4459AB-C815-4E36-AFAF-CEBAB715689A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adventurer</RootNamespace>
+    <AssemblyName>Adventurer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Demonbuddy">
+      <HintPath>..\..\..\DB-Current\Demonbuddy.exe</HintPath>
+    </Reference>
+    <Reference Include="GreyMagic">
+      <HintPath>..\..\..\DB-Current\GreyMagic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic">
+      <HintPath>..\..\..\DB-PTR\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\AdvDia.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\ActBountiesCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\AttackCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\CompleteActBountiesCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\Subroutines\ClearAreaForNSecondsCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\Subroutines\ClearLevelAreaCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\Subroutines\InteractWithGizmoCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\Subroutines\MoveToScenePositionCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\Subroutines\MoveToSceneCoroutine.cs" />
+    <Compile Include="Coroutines\CommonSubroutines\ISubroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\Subroutines\MoveToActorCoroutine.cs" />
+    <Compile Include="Coroutines\CommonSubroutines\MoveToPositionCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\Subroutines\MoveToMapMarkerCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\Subroutines\InteractWithUnitCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\Subroutines\EnterLevelAreaCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\Subroutines\KillUniqueMonsterCoroutine.cs" />
+    <Compile Include="Coroutines\CoroutineResult.cs" />
+    <Compile Include="Coroutines\ICoroutine.cs" />
+    <Compile Include="Coroutines\KeywardenCoroutines\KeywardenCoroutine.cs" />
+    <Compile Include="Coroutines\KeywardenCoroutines\KeywardenData.cs" />
+    <Compile Include="Coroutines\KeywardenCoroutines\KeywardenDataFactory.cs" />
+    <Compile Include="Coroutines\RiftCoroutines\UpgradeGemsCoroutine.cs" />
+    <Compile Include="Game\Combat\SkillHelper.cs" />
+    <Compile Include="Game\Events\PulsingObject.cs" />
+    <Compile Include="Coroutines\UsePortalCoroutine.cs" />
+    <Compile Include="Coroutines\RiftCoroutines\RiftCoroutine.cs" />
+    <Compile Include="Coroutines\WaitCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\Subroutines\IBountySubroutine.cs" />
+    <Compile Include="Coroutines\TownPortalCoroutine.cs" />
+    <Compile Include="Game\Actors\MarkerExtensions.cs" />
+    <Compile Include="Game\Combat\SafeZerg.cs" />
+    <Compile Include="Game\Events\EventType.cs" />
+    <Compile Include="Game\Events\PluginEvents.cs" />
+    <Compile Include="Game\Exploration\SceneMapping\CombineType.cs" />
+    <Compile Include="Game\Exploration\SceneMapping\DeathGates.cs" />
+    <Compile Include="Game\Exploration\Direction.cs" />
+    <Compile Include="Game\Exploration\Algorithms\Bresenham.cs" />
+    <Compile Include="Game\Exploration\Experiments\AdventurerNavigationProvider.cs" />
+    <Compile Include="Game\Exploration\GridPoint.cs" />
+    <Compile Include="Game\Exploration\GridStore.cs" />
+    <Compile Include="Game\Exploration\IGrid.cs" />
+    <Compile Include="Game\Exploration\IGridProvider.cs" />
+    <Compile Include="Game\Exploration\INode.cs" />
+    <Compile Include="Game\Exploration\NavigationGrid.cs" />
+    <Compile Include="Game\Exploration\ExplorationGrid.cs" />
+    <Compile Include="Game\Exploration\NavigationNode.cs" />
+    <Compile Include="Game\Exploration\NodeFlags.cs" />
+    <Compile Include="Game\Exploration\SceneData.cs" />
+    <Compile Include="Game\Exploration\SceneExitDirections.cs" />
+    <Compile Include="Game\Exploration\SceneMapping\DeathGateScene.cs" />
+    <Compile Include="Game\Exploration\SceneMapping\DeathGateType.cs" />
+    <Compile Include="Game\Exploration\SceneMapping\GateSide.cs" />
+    <Compile Include="Game\Exploration\SceneMapping\IWorldRegion.cs" />
+    <Compile Include="Game\Exploration\SceneMapping\RectangularRegion.cs" />
+    <Compile Include="Game\Exploration\SceneMapping\RegionGroup.cs" />
+    <Compile Include="Game\Exploration\SceneMapping\SceneDepth.cs" />
+    <Compile Include="Game\Exploration\SplitArray.cs" />
+    <Compile Include="Game\Exploration\WorldSceneCell.cs" />
+    <Compile Include="Game\Exploration\ExplorationNode.cs" />
+    <Compile Include="Game\Exploration\WorldScene.cs" />
+    <Compile Include="Game\Exploration\ExplorationData.cs" />
+    <Compile Include="Game\Exploration\ScenesStorage.cs" />
+    <Compile Include="Game\Exploration\Grid.cs" />
+    <Compile Include="Game\Quests\BountyDataFactory.cs" />
+    <Compile Include="Game\Quests\BountyData.cs" />
+    <Compile Include="Game\Quests\BountyScripts.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\GenericBountyCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\Subroutines\GuardedGizmoCoroutine.cs" />
+    <Compile Include="Coroutines\BountyCoroutines\BountyCoroutine.cs" />
+    <Compile Include="Game\Actors\ActorFinder.cs" />
+    <Compile Include="Game\Quests\BountyHelpers.cs" />
+    <Compile Include="Game\Combat\TargetingHelper.cs" />
+    <Compile Include="Coroutines\InteractionCoroutine.cs" />
+    <Compile Include="Coroutines\ClearAreaCoroutine.cs" />
+    <Compile Include="Game\Rift\RiftData.cs" />
+    <Compile Include="Game\Rift\RiftStep.cs" />
+    <Compile Include="Game\Rift\RiftQuest.cs" />
+    <Compile Include="Game\Rift\RiftType.cs" />
+    <Compile Include="Game\Stats\ExperienceTracker.cs" />
+    <Compile Include="IPluginCommunicator.cs" />
+    <Compile Include="Game\Quests\BountyQuestType.cs" />
+    <Compile Include="Game\Quests\BountyStatistics.cs" />
+    <Compile Include="Game\Actors\EntryPortals.cs" />
+    <Compile Include="Settings\AdventurerGem.cs" />
+    <Compile Include="Settings\AdventurerGems.cs" />
+    <Compile Include="Tags\KeywardensTag.cs" />
+    <Compile Include="Tags\NephalemRiftTag.cs" />
+    <Compile Include="Tags\GreaterRiftTag.cs" />
+    <Compile Include="Tags\RiftTag.cs" />
+    <Compile Include="Tags\ExploreLevelAreaTag.cs" />
+    <Compile Include="Tags\BountiesTag.cs" />
+    <Compile Include="Tags\ClearAreaTag.cs" />
+    <Compile Include="Tags\MoveToPositionTag.cs" />
+    <Compile Include="Tags\TestTag2.cs" />
+    <Compile Include="Tags\WaitForNSecondsTag.cs" />
+    <Compile Include="UI\AdventurerProxy.cs" />
+    <Compile Include="UI\RadarWindow.cs" />
+    <Compile Include="UI\ConfigWindow.cs" />
+    <Compile Include="UI\MainUI.cs" />
+    <Compile Include="UI\UIComponents\BindingProxy.cs" />
+    <Compile Include="UI\UIComponents\Converters\BoolToValueConverter.cs" />
+    <Compile Include="UI\UIComponents\Converters\IntToStringConverter.cs" />
+    <Compile Include="UI\UIComponents\MathUtil.cs" />
+    <Compile Include="Game\Events\BotEvents.cs" />
+    <Compile Include="UI\UIComponents\ThreadedWindow.cs" />
+    <Compile Include="UI\UIComponents\CacheUI.cs" />
+    <Compile Include="UI\UIComponents\CacheUIDataModel.cs" />
+    <Compile Include="UI\UIComponents\Events.cs" />
+    <Compile Include="UI\UIComponents\RadarCanvas\CanvasData.cs" />
+    <Compile Include="UI\UIComponents\RadarCanvas\Drawings.cs" />
+    <Compile Include="UI\UIComponents\RadarCanvas\DrawingUtilities.cs" />
+    <Compile Include="UI\UIComponents\RadarCanvas\PointMorph.cs" />
+    <Compile Include="UI\UIComponents\RadarCanvas\RadarCanvas.cs" />
+    <Compile Include="UI\UIComponents\RadarCanvas\RadarObject.cs" />
+    <Compile Include="UI\UIComponents\RadarCanvas\RadarOverlayControl.cs" />
+    <Compile Include="UI\UIComponents\RadarCanvas\RelativeDrawing.cs" />
+    <Compile Include="UI\UIComponents\RadarCanvas\Resources.cs" />
+    <Compile Include="UI\UIComponents\RadarCanvas\Shapes.cs" />
+    <Compile Include="UI\UIComponents\RadarCanvas\StaticDrawing.cs" />
+    <Compile Include="UI\UIComponents\RadarViewport\RadarViewport.cs" />
+    <Compile Include="UI\UIComponents\UILoader.cs" />
+    <Compile Include="Util\CoroutineQueue.cs" />
+    <Compile Include="Util\EmptyLookup.cs" />
+    <Compile Include="Util\FileUtils.cs" />
+    <Compile Include="Util\PluginCommunicator.cs" />
+    <Compile Include="Game\Quests\BountyCoroutineFactory.cs" />
+    <Compile Include="Adventurer.cs" />
+    <Compile Include="Coroutines\ExplorationCoroutine.cs" />
+    <Compile Include="Game\Exploration\ExplorationHelpers.cs" />
+    <Compile Include="Coroutines\NavigationCoroutine.cs" />
+    <Compile Include="Coroutines\WaypointCoroutine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Game\Quests\QuestData.cs" />
+    <Compile Include="Game\Actors\WaypointFactory.cs" />
+    <Compile Include="Settings\PluginSettings.cs" />
+    <Compile Include="Tags\RunActBountiesTag.cs" />
+    <Compile Include="Tags\RunBountyTag.cs" />
+    <Compile Include="Tags\StopBotTag.cs" />
+    <Compile Include="Tags\TestTag.cs" />
+    <Compile Include="Tags\TakeWaypointTag.cs" />
+    <Compile Include="UI\OverlayBase.cs" />
+    <Compile Include="UI\InputBox.cs" />
+    <Compile Include="UI\OverlayUI.cs" />
+    <Compile Include="UI\DeveloperUI.cs" />
+    <Compile Include="Util\Logger.cs" />
+    <Compile Include="Util\ObjectDumper.cs" />
+    <Compile Include="Util\PerformanceLogger.cs" />
+    <Compile Include="Util\PluginTime.cs" />
+    <Compile Include="Util\Randomizer.cs" />
+    <Compile Include="Util\JsonSerializer.cs" />
+    <Compile Include="Util\SafeFrameLock.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bounties.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CycleNormalAndGreaterRifts.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CycleBountiesAndRifts.xml" />
+    <Content Include="Keywardens.xml" />
+    <Content Include="NephalemRift.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="GreaterRift.xml" />
+    <Content Include="ClearArea.xml" />
+    <Content Include="Clear the Plague Tunnels.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Clear the Perilous Cave.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WaitAndTownrun.xml" />
+    <Content Include="WaitTest.xml" />
+    <Content Include="SpecificBounty.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Rift.xml" />
+    <Content Include="Explore.xml" />
+    <Content Include="Adventurer.xml" />
+    <Compile Include="Game\Quests\QuestDataStorage.cs" />
+    <Content Include="Game\Quests\SpecialBounties.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UI\Config.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\MapUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>SET TARGETDIR=C:\DB\DB-Current\Plugins\$(ProjectName)\
+
+rd "%25TARGETDIR%25" /S /Q
+xcopy "$(ProjectDir)*" "%25TARGETDIR%25" /Q /E /C /I /R /Y
+rd "%25TARGETDIR%25\bin\" /S /Q
+rd "%25TARGETDIR%25obj\" /S /Q
+del "%25TARGETDIR%25$(ProjectName).csproj"
+del "%25TARGETDIR%25*.suo"
+del "%25TARGETDIR%25*.user"
+del "%25TARGETDIR%25*.DotSettings"
+del "%25TARGETDIR%25packages.config"
+del "%25TARGETDIR%25*.xml"
+
+SET PROFILESDIR=C:\DB\DB-Current\Profiles\$(ProjectName)\
+rd "%25PROFILESDIR%25" /S /Q
+md "%25PROFILESDIR%25"
+copy "$(ProjectDir)Bounties.xml" "%25PROFILESDIR%25"
+copy "$(ProjectDir)GreaterRift.xml" "%25PROFILESDIR%25"
+copy "$(ProjectDir)NephalemRift.xml" "%25PROFILESDIR%25"
+copy "$(ProjectDir)Keywardens.xml" "%25PROFILESDIR%25"
+
+
+SET TARGETDIR=C:\DB\DB-PTR\Plugins\$(ProjectName)\
+
+rd "%25TARGETDIR%25" /S /Q
+xcopy "$(ProjectDir)*" "%25TARGETDIR%25" /Q /E /C /I /R /Y
+rd "%25TARGETDIR%25bin\" /S /Q
+rd "%25TARGETDIR%25obj\" /S /Q
+del "%25TARGETDIR%25$(ProjectName).csproj"
+del "%25TARGETDIR%25*.suo"
+del "%25TARGETDIR%25*.user"
+del "%25TARGETDIR%25*.DotSettings"
+del "%25TARGETDIR%25packages.config"
+del "%25TARGETDIR%25*.xml"
+
+SET PROFILESDIR=C:\DB\DB-PTR\Profiles\$(ProjectName)\
+rd "%25PROFILESDIR%25" /S /Q
+md "%25PROFILESDIR%25"
+copy "$(ProjectDir)Bounties.xml" "%25PROFILESDIR%25"
+copy "$(ProjectDir)GreaterRift.xml" "%25PROFILESDIR%25"
+copy "$(ProjectDir)NephalemRift.xml" "%25PROFILESDIR%25"
+copy "$(ProjectDir)Keywardens.xml" "%25PROFILESDIR%25"
+
+SET TARGETDIR=C:\DB\Projects\PublicSVN\$(ProjectName)\Plugins\$(ProjectName)\
+
+rd "%25TARGETDIR%25" /S /Q
+xcopy "$(ProjectDir)*" "%25TARGETDIR%25" /Q /E /C /I /R /Y
+rd "%25TARGETDIR%25bin\" /S /Q
+rd "%25TARGETDIR%25obj\" /S /Q
+del "%25TARGETDIR%25$(ProjectName).csproj"
+del "%25TARGETDIR%25*.suo"
+del "%25TARGETDIR%25*.user"
+del "%25TARGETDIR%25*.DotSettings"
+del "%25TARGETDIR%25packages.config"
+del "%25TARGETDIR%25*.xml"
+
+SET PROFILESDIR=C:\DB\Projects\PublicSVN\$(ProjectName)\Profiles\$(ProjectName)\
+rd "%25PROFILESDIR%25" /S /Q
+md "%25PROFILESDIR%25"
+copy "$(ProjectDir)Bounties.xml" "%25PROFILESDIR%25"
+copy "$(ProjectDir)GreaterRift.xml" "%25PROFILESDIR%25"
+copy "$(ProjectDir)NephalemRift.xml" "%25PROFILESDIR%25"
+copy "$(ProjectDir)Keywardens.xml" "%25PROFILESDIR%25"
+
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
